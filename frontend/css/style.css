@@ -1,0 +1,88 @@
+@import url('https://googleapis.com');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #F7F2EB;
+    --surface: #ffffff;
+    --text: #3E472A;
+    --border: #3E472A;
+    --light: #8B9A6E;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+.narrow {
+    width: min(760px, 92%);
+}
+
+p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/*---------NAVIGATION BAR----------*/
+
+.e-lift-header{
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-wrapper {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    margin-left: -4px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar a {
+    color: var(--muted);
+    padding: 9px 13px;
+    border-radius: 8px;
+    font-size: 32;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--text);
+    background-color: #EAE2D678;
+}
+
+/*--------BODY-----------*/
+
+h1 {
+    color: #000000;
+    font-family: 'Bebas Neue';
+}
