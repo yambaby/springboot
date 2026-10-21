@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="e-lift-header"> 
+    <header class="e-lift-header">
         <div class="container nav-wrapper">
-            <a class="logo" href="index.html"><img src="images/ELIFT.png" height="40" width="70"></a>
-            <nav class="navbar">
+            <a class="logo" href="index.html" aria-label="E-Lift home"><img src="images/ELIFT.png" alt="E-Lift" width="112" height="32"></a>
+            <form class="site-search" role="search" action="index.html" method="get">
+                <label class="visually-hidden" for="product-search">Search equipment</label>
+                <input id="product-search" name="q" type="search" placeholder="Search equipment" autocomplete="off">
+                <span class="search-icon" aria-hidden="true"></span>
+            </form>
+            <nav class="navbar" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a class="active" href="products.html">Products</a>
+                <a class="active" href="products.html" aria-current="page">Products</a>
                 <a href="customers.html">Customers</a>
                 <a class="nav-cart" href="cart.html">Cart</a>
-        </nav>
+            </nav>
         </div>
     </header>
 </body>

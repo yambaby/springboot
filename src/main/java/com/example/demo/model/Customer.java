@@ -59,6 +59,10 @@ public class Customer {
     }
 
     //Getters
+    public int getCustomerId(){
+        return customerId;
+    }
+    
     public String getFirstName(){
         return firstName;
     }

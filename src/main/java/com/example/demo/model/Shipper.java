@@ -40,6 +40,10 @@ public class Shipper {
 
     //Getter 
 
+    public int getShipperId(){
+        return shipperId;
+    }
+
     public String getShipperName(){
         return name;
     }

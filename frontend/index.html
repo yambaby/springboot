@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Lift</title>
-    <link rel="stylesheet" href="css/style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#f7f3eb">
+    <title>E-Lift | Equipment for your next rep</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="e-lift-header"> 
         <div class="container nav-wrapper">
-            <a class="logo" href="index.html"><img src="images/ELIFT.png" height="40" width="70"></a>
-            <nav class="navbar">
-                <a class="active" href="index.html">Home</a>
+            <a class="logo" href="index.html" aria-label="E-Lift home"><img src="images/ELIFT.png" alt="E-Lift" width="112" height="32"></a>
+            <form class="site-search" role="search" action="index.html" method="get">
+                <label class="visually-hidden" for="product-search">Search equipment</label>
+                <input id="product-search" name="q" type="search" placeholder="Search equipment" autocomplete="off">
+                <span class="search-icon" aria-hidden="true"></span>
+            </form>
+            <nav class="navbar" aria-label="Main navigation">
+                <a class="active" href="index.html" aria-current="page">Home</a>
                 <a href="about.html">About</a>
                 <a href="products.html">Products</a>
                 <a href="customers.html">Customers</a>
                 <a class="nav-cart" href="cart.html">Cart</a>
-        </nav>
+            </nav>
         </div>
     </header>
 
-    
+    <main>
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">E-LIFT <span>/</span> MOVE WITH PURPOSE</p>
+                    <h1>Start your journey with the <span>right equipment.</span></h1>
+                    <p class="hero-description">Good training starts with gear you can count on. Find the essentials to make every session your own.</p>
+                    <a class="button button-primary" href="products.html">Shop equipment <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Sunlit strength-training studio with free weights" fetchpriority="high">
+                    <div class="image-caption"><span>01 / 03</span><span>Find your strength</span></div>
+                </div>
+            </div>
+        </section>
 
+        <section class="featured-section" id="featured-products" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">THE E-LIFT EDIT</p>
+                        <h2 id="featured-title">Top-selling products</h2>
+                    </div>
+                    <a class="text-link" href="products.html">View all <span aria-hidden="true">→</span></a>
+                </div>
+                <p class="search-feedback" aria-live="polite"></p>
+                <div class="product-grid" aria-live="polite"></div>
+            </div>
+        </section>
+
+    </main>
+    <script src="javascript/script.js" defer></script>
 </body>
 </html>
